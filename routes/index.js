@@ -17,7 +17,7 @@ api.post('/signin', userCtrl.signIn)
 api.post('/signup', userCtrl.signUp)
 
 api.get('/private', auth, (req, res) => {
-    res.status(200).send({ message: 'Acceso Concedido'})
+    res.status(200).send({ message: 'Acceso Concedido a /private por auth'})
 })
 
 module.exports = api
