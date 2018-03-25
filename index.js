@@ -6,7 +6,7 @@ const config = require('./config')
 
 mongoose.connect(config.db, (err, res) => {
     if (err) {
-        return console.log(`Eror al Conectar a la Base de datos: ${err}`)
+        return console.log(`Error al Conectar a la Base de datos: ${err}`)
     }
     console.log('Conexion a la Base de Datos Establecida...');
 
