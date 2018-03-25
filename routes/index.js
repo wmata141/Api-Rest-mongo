@@ -7,7 +7,7 @@ const userCtrl = require('../controllers/user')
 
 const api = express.Router()
 
-api.get('/producto', auth, productoCtrl.getProductos)
+api.get('/producto', , productoCtrl.getProductos)
 api.get('/producto/:id', productoCtrl.getProducto)
 api.post('/producto', productoCtrl.saveProducto)
 api.put('/producto/:id', productoCtrl.updateProducto)
